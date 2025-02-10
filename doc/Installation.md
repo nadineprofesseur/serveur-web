@@ -18,9 +18,22 @@ sudo chown nadine:www-data -R *
 sudo apt install php
 sudo apt install libapache2-mod-php
 ```
+
+```
+cd /etc/php/8.1/apache2
+sudo jed.ini
+> display_errors = On
+> display_startup_errors = On
+> opcache.enable = 0
+> mysqlnd.debug = /var/log/php-mysql
+sudo service apache2 restart
+```
+
 ___
 
 # BASE DE DONNÉES
+
+## INSTALLATION de BASE DE DONNEES
 
 ```
 sudo apt install mysql-server
@@ -38,7 +51,20 @@ sudo mysql -u root -o
 > GRANT ALL PRIVILEGES ON *.* TO 'superadmin'@'localhost';
 > GRANT GRANT OPTION on *.* to 'superadmin'@'localhost';
 > flush privileges;
+```
+
+## CONFIGURATION de BASE DE DONNEES
 
 ```
+sudo apt install php-myadmin
+sudo /etc/php/8.1/apache2
+sudo jed php.ini
+  effacer le ; devant 
+  extension=mysqli
+  extension=pdo_mysql
+sudo service apache2 restart
+```
+
+
 
 
