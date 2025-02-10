@@ -44,6 +44,7 @@ sudo mysql -u root
 > exit;
 
 sudo mysql_secure_installation 
+(SI erreur au premier N, rebuild de toute la machine)
 > N N Y Y Y Y
 
 sudo mysql -u root -o
@@ -65,6 +66,15 @@ sudo jed php.ini
 sudo service apache2 restart
 ```
 
+## PHPMYADMIN
+
+ECRAN à la full largeur
+```
+sudo apt install phpmyadmin
+> Cocher Apache avec la barre espace (tab pour aller a ok)
+> YES
+> garder le mot de passe vide
+```
 
 
 
