@@ -2,14 +2,23 @@
 
 ## Activation de HTTPS pour les 3 sites
 
+```
+
+```
 
 ## Installation des CMS
 
 ### Installation de Flatpress sur blog.mon-site.com
 
+```
+
+```
 
 ### Installation de Dokuwiki sur wiki.mon-site.com
 
+```
+
+```
 
 ## Préparation du site badge
 
@@ -44,3 +53,7 @@ cp gpg.txt /var/www/nadine.scintillant.world/gpg.txt
 ```
 
 ## Préparation des webmestres
+
+```
+
+```
