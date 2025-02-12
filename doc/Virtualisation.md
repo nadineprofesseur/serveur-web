@@ -10,10 +10,16 @@ Aller sur mon registraire Porkbun, dans le panneau DNS
 
 ## VHOST du VPS
 
-Exemple pour le blog
+### Configuration du blog
 
 ```
 cd /etc/apache2/sites-available/
 sudo jed blog.experimentations.buzz.conf
-(ne pas ecrire la config ici mais upload du fichier)
+(ne pas ecrire la config ici mais upload du fichier dans etc)
+```
+
+### Activation du blog
+
+```
+
 ```
