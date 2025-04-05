@@ -1,7 +1,7 @@
 ### Script de sauvegarde
 ## Script rotatif 7 jours
 Voici un script rotatif
-```
+```bash
 #!/bin/bash
 
 cd /var/www
